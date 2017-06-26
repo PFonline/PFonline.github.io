@@ -4,32 +4,121 @@
     font-family: tahoma,arial,"Hiragino Sans GB",宋体,sans-serif;
     font-size: 12px;
 }
+.top{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    opacity:0.5;
+    line-height: 50px;
+    border-bottom: rgba(255, 255, 255, 0.5) solid 1px;
+}
+.top_title{
+    width: 160px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+}
+.top_title a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 36px;
+}
+.top_options{
+    width: 200px;
+    height: 100%;
+    float: right;
+}
+.top_options a{
+    font-size: 16px;
+    font-weight: 800;
+    margin-left: 24px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}
+.top_options a:hover{
+    transform: translate(-2px,2px);
+}
+.top:hover{
+    opacity:1;
+    color: white;
+}
 .background{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("img/背景黑.jpg") no-repeat center center;
+    background: url("img/背景黑.jpg") no-repeat center ;
     background-size: 100%;
 }
-.main_top{
+.text_myself{
     position: absolute;
-    margin-top: 450px;
+    margin-top: 400px;
+    line-height: 40px;
+    width: 100%;
+    height: 100px;
+}
+.text_myself p{
+    text-align: center;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.text_info{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 628px;
+    background: #c4c4c4;
+}
+.text_info_top{
+    width: 46%;
+    height: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
+.text_info_top p{
+    font-size: 30px;
+    padding-top: 3%;
+}
+.main_top{
+    margin-top: 30px;
     width: 100%;
     height: 170px;
 }
 .main_select{
     width: 80%;
     height: 150px;
-    margin: 10px auto;
+    margin:0 auto;
     padding-left: 10%;
     list-style: none;
+}
+.main_select a{
+    text-align: center;
+    color: aliceblue;
 }
 .main_select li{
     float: left;
     width: 15%;
     height: 145px;
     margin-left: 2%;
-    border: 1px solid rgb(149,149,149);
+    border: 1px solid rgba(149,149,149,0.2);
     border-radius: 5px;
-    background: rgba(129,129,129,0.5);
+    background: rgba(129,129,129,0.1);
+}
+.main_select li p{
+    margin-top: 6px;
+    font-size: 20px;
+}
+.page_first{
+    margin-top: 628px;
+    width: 100%;
+    height: 400px;
+    background: #7c99ff;
+}
+.page_two{
+    width: 100%;
+    height: 200px;
+    background: #53ffe7;
 }
